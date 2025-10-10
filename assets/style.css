@@ -84,3 +84,50 @@ section a {
 section a:hover {
     transform: scale(1.1);
 }
+
+.teams-main {
+    width: 100%;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teams-list-article {
+    background-color: #2E2E2E;
+    width: 85%;
+    height: auto;
+    display: inline-block;
+
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 2px 2px 40px black;
+}
+
+.teams-list-div {
+    width: 90%;
+    padding: 40px;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article img {
+    height: 90px;
+    width: auto;
+}
+
+article h2 {
+    font-size: 25px;
+    width: 33%;
+    height: auto;
+}
+
+article ul {
+    font-size: 17px;
+    width: 33%;
+    height: auto;
+    padding: 2px;
+}
