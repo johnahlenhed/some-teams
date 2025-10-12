@@ -9,9 +9,9 @@ require __DIR__. '/includes/header.php';
     <section class="teams-section">
         <?php foreach ($teams as $teamName => $teamData): ?>
             <div class="teams-section-div">
-            <a href="<?php echo $teamData['url'] ?>">
-            <?php echo $teamName?>
-            <img src="<?php echo $teamData['logo'] ?>" alt="Team Logo">
+            <a href="team.php?team=<?= urlencode($teamName) ?>">
+            <?= htmlspecialchars($teamName) ?>
+            <img src="<?= htmlspecialchars($teamData['logo']) ?>" alt="Team Logo">
             </a>
             </div>
         <?php endforeach ?>
