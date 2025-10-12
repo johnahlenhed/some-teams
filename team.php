@@ -13,10 +13,10 @@ $team = $teams[$teamName];
 require __DIR__. '/includes/header.php';
 ?>
 
-<main>
+<main class="team-main">
     <h1><?= htmlspecialchars($teamName) ?></h1>
 
-    <div>
+    <div class="team-div">
         <img src="<?= htmlspecialchars($team['logo']) ?>" alt="Team Logo" width="150">
 
         <p><strong>League:</strong> <?= htmlspecialchars($team['league']) ?></p>

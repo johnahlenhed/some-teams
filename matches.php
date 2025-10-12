@@ -77,34 +77,37 @@ require __DIR__ . '/includes/header.php'; ?>
 <main>
     <h1>Matches</h1>
 
+    <article class="matches-article">
+        <?php
 
-    <?php
+        foreach ($rounds as $roundNum => $matches): ?>
+            <div class="matches-div">
+                <h2>Round <?= $roundNum + 1 ?> </h2>
 
-    foreach ($rounds as $roundNum => $matches): ?>
+                <?php foreach ($matches as $match): ?>
 
-        <h2>Round <?= $roundNum + 1 ?> </h2>
+                    <div class="match-text-div">
+                        <?php
+                        $homeTeam = $teams[$match['home']];
+                        $awayTeam = $teams[$match['away']];
+                        ?>
 
-        <?php foreach ($matches as $match): ?>
 
-            <?php
-            $homeTeam = $teams[$match['home']];
-            $awayTeam = $teams[$match['away']];
-            ?>
+                        <p class="match-text-div-left"><?= $match['home'] ?></p>
 
-            <div>
-                <div><?= $match['home'] ?></div>
+
+                        <span> vs </span>
+
+
+                        <p class="match-text-div-right"><?= $match['away'] ?></p>
+
+                    </div>
+
+
+                <?php endforeach ?>
             </div>
-
-            <span> vs </span>
-
-            <div>
-                <div><?= $match['away'] ?></div>
-            </div>
-
         <?php endforeach ?>
-
-    <?php endforeach ?>
-
+    </article>
 </main>
 
 <?php
