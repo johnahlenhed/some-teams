@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UEFA Women's Champions League</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/1/18/UEFA_Women%27s_Champions_League_logo_%282021%29.svg/203px-UEFA_Women%27s_Champions_League_logo_%282021%29.svg.png?20210701165655">
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
