@@ -1,0 +1,317 @@
+:root {
+    --background-color: #121212;
+    --card-background-color: #1E1E1E;
+    --text-color: #EAEAEA;
+    --border-line-color: #2E2E2E;
+    --hover-color: #00DCA6;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--card-background-color);
+    padding: 15px;
+    border-bottom: 1px solid var(--border-line-color);
+}
+
+nav {
+    background-color: var(--card-background-color);
+    display: inline-flex;
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    background-color: var(--card-background-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 20px;
+}
+
+header nav a {
+    font-size: 30px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--hover-color);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+main h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.teams-section {
+    background-color: var(--background-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 40px black;
+}
+
+.teams-section-div {
+    background-color: var(--card-background-color);
+    width: 200px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 5px solid var(--border-line-color);
+    margin: 20px;
+}
+
+section img {
+    height: 80px;
+    width: 80px;
+}
+
+section a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+
+section a:hover {
+    transform: scale(1.1);
+    color: var(--hover-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.teams-main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teams-list-article {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.teams-list-div {
+    background-color: var(--card-background-color);
+    width: 70%;
+    height: auto;
+    padding: 40px 15px 40px 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 5px solid var(--border-line-color);
+    margin: 20px;
+    box-shadow: black 2px 2px 20px;
+}
+
+article div h2 {
+    font-size: 33px;
+    width: 250px;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article div ul {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+article div ul li {
+    padding: 5px;
+}
+
+article img {
+    height: 90px;
+    width: auto;
+    padding: 0px 20px 0px 5px;
+}
+
+article ul {
+    font-size: 17px;
+    width: 33%;
+    height: auto;
+    padding: 2px;
+}
+
+.team-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-div {
+    background-color: var(--card-background-color);
+    font-size: large;
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 40px;
+    border: 5px solid var(--border-line-color);
+    box-shadow: black 2px 2px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div a {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.matches-article {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.matches-div {
+    background-color: var(--card-background-color);
+    width: 60%;
+    height: auto;
+    padding: 40px 15px 40px 15px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    border: 5px solid var(--border-line-color);
+    margin: 20px;
+    box-shadow: black 2px 2px 20px;
+}
+
+.match-text-div {
+    font-size: 30px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 50px;
+}
+
+.match-text-div-left {
+    width: 230px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.match-text-div-right {
+    width: 230px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: right;
+}
+
+.about-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-article {
+    width: 60%;
+    height: auto;
+    background-color: var(--card-background-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 5px solid var(--border-line-color);
+    margin: 20px;
+    box-shadow: black 2px 2px 20px;
+}
+
+.about-div {
+    font-size: 20px;
+    width: 75%;
+    height: auto;
+    padding: 40px 15px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-article-ul {
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+article h3 {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+article h5 {
+    font-size: 20px;
+}
+
+footer {
+    background-color: var(--card-background-color);
+    padding: 15px;
+    border-top: 1px solid var(--border-line-color);
+    text-align: center;
+}
